@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        font-size: 30px;
+    }
+
+    div {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div>
+        <p>2019-7-14 23:50:01</p>
+        <p id="timeBox"></p>
+        <p id="kkk"></p>
+    </div>
+    <script>
+        var times = new Date()
+        console.log(times)
+
+        function fn(time_1, time_2) {
+            time_1 = time_1.getTime()
+            time_2 = time_2.getTime()
+            let differ = parseInt((time_2 - time_1) / 1000)
+            console.log(differ)
+            //年时间 计算 360*24*60*60
+            //月    60*60*24*30 
+            let year = parseInt(differ / (365 * 24 * 60 * 60))
+            let month = parseInt((differ - (365 * 24 * 60 * 60 * year)) / (30 * 60 * 60 * 24))
+            let day = parseInt((differ - (365 * 24 * 60 * 60 * year) - (month * 30 * 60 * 60 * 24)) / (60 * 60 * 24))
+            let hour = differ - (day * (60 * 60 * 24)) - (month * 30 * 60 * 60 * 24) - (365 * 24 * 60 * 60 * year)
+            hour = parseInt(hour / (60 * 60))
+            let minutes = parseInt(differ % (60 * 60) / 60)
+            let seconds = parseInt(differ % 60)
+            let str = '在一起' + year + '年' + month + '月' + day + '天' + hour + '小时' + minutes + '分钟' + seconds + '秒钟'
+            return str
+        }
+        var time_1 = new Date('2019-07-14 23:50:01')
+        setInterval(function () {
+            var time_2 = new Date()
+            var res = fn(time_1, time_2)
+            timeBox.innerText = res
+            // set('2019-7-14 23:50:01')
+        }, 1000)
+    </script>
+</body>
+
+</html>
