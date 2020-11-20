@@ -1,27 +1,45 @@
 
-<html lang="en">
+<html>
+	<head>
+        <meta charset="UTF-8">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<script type="text/javascript" src="js/bodymovin.js"></script>
-<script type="text/javascript" src="js/data.js"></script>
+		<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+        
 
-<body>
-    <div id="svgContainer"></div>
-    404
-</body>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+				color: #B0BEC5;
+				display: table;
+				font-weight: 100;
+				font-family: 'Lato';
+			}
 
-<script type="text/javascript">
-    var svgContainer = document.getElementById('svgContainer');
-    var animItem = bodymovin.loadAnimation({
-        wrapper: svgContainer,
-        animType: 'svg',
-        loop: true,
-        animationData: JSON.parse(animationData)
-    });
-</script>
-    </html>
+			.container {
+				text-align: center;
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.content {
+				text-align: center;
+				display: inline-block;
+			}
+
+			.title {
+				font-size: 42px;
+				margin-bottom: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="title">404 很抱歉，您查看的页面找不到了！</div>
+			</div>
+		</div>
+	</body>
+</html>
