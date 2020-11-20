@@ -1,5 +1,4 @@
 permalink: /404.html
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,14 +10,17 @@ permalink: /404.html
 <script type="text/javascript" src="js/bodymovin.js"></script>
 <script type="text/javascript" src="js/data.js"></script>
 
-<div id="svgContainer"></div>
+<body>
+    <div id="svgContainer"></div>
+</body>
 
 <script type="text/javascript">
-var svgContainer = document.getElementById('svgContainer');
-var animItem = bodymovin.loadAnimation({
-  wrapper: svgContainer,
-  animType: 'svg',
-  loop: true,
-  animationData: JSON.parse(animationData)
-});
+    var svgContainer = document.getElementById('svgContainer');
+    var animItem = bodymovin.loadAnimation({
+        wrapper: svgContainer,
+        animType: 'svg',
+        loop: true,
+        animationData: JSON.parse(animationData)
+    });
 </script>
+    </html>
