@@ -22,13 +22,19 @@ export const asyncRouterMap = [
         name: 'dashboard',
         redirect: '/dashboard/workplace',
         component: RouteView,
-        meta: { title: 'menu.dashboard', keepAlive: true, icon: bxAnaalyse, permission: [ 'admin','administrators' ] },
+        meta: { title: 'menu.dashboard', keepAlive: true, icon: bxAnaalyse, },
         children: [
+          {
+            path: '/dashboard/workplace',
+            name: 'Workplace',
+            component: () => import('@/views/dashboard/Workplace'),
+            meta: { title: 'menu.dashboard.workplace', keepAlive: true,  }
+          },
           {
             path: '/dashboard/analysis/:pageNo([1-9]\\d*)?',
             name: 'Analysis',
             component: () => import('@/views/dashboard/Analysis'),
-            meta: { title: 'menu.dashboard.analysis', keepAlive: false, permission: [ 'admin','administrators' ] }
+            meta: { title: 'menu.dashboard.analysis', keepAlive: false,  }
           },
           // 外部链接
           {
@@ -36,12 +42,6 @@ export const asyncRouterMap = [
             name: 'Monitor',
             meta: { title: 'menu.dashboard.monitor', target: '_blank' }
           },
-          {
-            path: '/dashboard/workplace',
-            name: 'Workplace',
-            component: () => import('@/views/dashboard/Workplace'),
-            meta: { title: 'menu.dashboard.workplace', keepAlive: true, permission: [ 'admin','administrators' ] }
-          }
         ]
       },
 

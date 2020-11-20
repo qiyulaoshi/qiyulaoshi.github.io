@@ -10,7 +10,8 @@ import {
 import roleObj from './info'
 import {
   welcome,
-  getCookie
+  getCookie,
+  delCookie,
 } from '@/utils/util'
 
 const user = {
@@ -111,6 +112,7 @@ const user = {
         // logout(state.token).then(() => {
           commit('SET_TOKEN', '')
           commit('SET_ROLES', [])
+          delCookie('wc')
           storage.remove(ACCESS_TOKEN)
           resolve()
         // }).catch(() => {
