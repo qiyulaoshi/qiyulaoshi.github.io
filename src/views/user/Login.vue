@@ -11,10 +11,10 @@
         <a-input
           size="large"
           type="text"
-          placeholder="账户: admin"
+          placeholder="用户名"
           v-decorator="[
                 'username',
-                {rules: [{ required: true, message: '请输入帐户名或邮箱地址' },], validateTrigger: 'change'}
+                {rules: [{ required: true, message: '请输入用户名' },], validateTrigger: 'change'}
               ]"
         >
           <a-icon slot="prefix" type="user" :style="{ color: 'rgba(0,0,0,.25)' }" />
@@ -24,7 +24,7 @@
       <a-form-item>
         <a-input-password
           size="large"
-          placeholder="密码: admin or ant.design"
+          placeholder="密码"
           v-decorator="[
                 'password',
                 {rules: [{ required: true, message: '请输入密码' }], validateTrigger: 'blur'}
@@ -52,7 +52,7 @@
 import md5 from 'md5'
 import TwoStepCaptcha from '@/components/tools/TwoStepCaptcha'
 import { mapActions } from 'vuex'
-import { timeFix,setCookie } from '@/utils/util'
+import { timeFix, setCookie } from '@/utils/util'
 import { getSmsCaptcha, get2step } from '@/api/login'
 
 export default {
@@ -78,8 +78,7 @@ export default {
       }
     }
   },
-  created() {
-  },
+  created() {},
   methods: {
     ...mapActions(['Login', 'Logout']),
     // handler
@@ -107,16 +106,15 @@ export default {
           // loginParams['username'] = values.username
           loginParams.password = md5(values.password)
           console.log(loginParams.password)
-          if(loginParams['username']  == 'ljh' && loginParams.password == '67f87c9b32834504b4ddf432055d88bd'){
-            setCookie('wc',loginParams.password)
-             Login(loginParams)
-             this.loginSuccess()
-          }else if(loginParams['username']  == 'zzy' && loginParams.password == 'c53001d04a23cf3376f85d56ef4d4b6f'){
-             setCookie('wc',loginParams.password)
-             Login(loginParams)
-             this.loginSuccess()
-          }
-          else{
+          if (loginParams['username'] == 'ljh' && loginParams.password == '67f87c9b32834504b4ddf432055d88bd') {
+            setCookie('wc', loginParams.password)
+            Login(loginParams)
+            this.loginSuccess()
+          } else if (loginParams['username'] == 'zzy' && loginParams.password == 'c53001d04a23cf3376f85d56ef4d4b6f') {
+            setCookie('wc', loginParams.password)
+            Login(loginParams)
+            this.loginSuccess()
+          } else {
             this.requestFailed(err || '')
             state.loginBtn = false
           }
@@ -135,7 +133,7 @@ export default {
           message: '欢迎',
           description: `${timeFix()}，欢迎回来`
         })
-      }, 1000) 
+      }, 1000)
       this.isLoginError = false
     },
     requestFailed(err) {
@@ -152,6 +150,9 @@ export default {
 
 <style lang="less" scoped>
 .user-layout-login {
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
   label {
     font-size: 14px;
   }
