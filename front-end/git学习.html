@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>git基本知识 | 🌈李家豪</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+    <meta name="description" content="Hi,我是李家豪">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/assets/css/0.styles.eded2aa7.css" as="style"><link rel="preload" href="/assets/js/app.40613aa4.js" as="script"><link rel="preload" href="/assets/js/2.4ede8d6e.js" as="script"><link rel="preload" href="/assets/js/28.c3c7b157.js" as="script"><link rel="prefetch" href="/assets/js/10.a7db3d73.js"><link rel="prefetch" href="/assets/js/11.b786e214.js"><link rel="prefetch" href="/assets/js/12.8ea124aa.js"><link rel="prefetch" href="/assets/js/13.b684e61e.js"><link rel="prefetch" href="/assets/js/14.451c53c4.js"><link rel="prefetch" href="/assets/js/15.359a6041.js"><link rel="prefetch" href="/assets/js/16.206a4eeb.js"><link rel="prefetch" href="/assets/js/17.45efa6fd.js"><link rel="prefetch" href="/assets/js/18.2258cdb4.js"><link rel="prefetch" href="/assets/js/19.110159be.js"><link rel="prefetch" href="/assets/js/20.60d363af.js"><link rel="prefetch" href="/assets/js/21.5e8ebb05.js"><link rel="prefetch" href="/assets/js/22.476edea2.js"><link rel="prefetch" href="/assets/js/23.896da770.js"><link rel="prefetch" href="/assets/js/24.3cfe0c60.js"><link rel="prefetch" href="/assets/js/25.858972c0.js"><link rel="prefetch" href="/assets/js/26.a39e3bb2.js"><link rel="prefetch" href="/assets/js/27.1f1c7505.js"><link rel="prefetch" href="/assets/js/29.795fc34a.js"><link rel="prefetch" href="/assets/js/3.46a458f3.js"><link rel="prefetch" href="/assets/js/30.4dcdfa5c.js"><link rel="prefetch" href="/assets/js/31.a2f10b4a.js"><link rel="prefetch" href="/assets/js/32.ee2f9e7d.js"><link rel="prefetch" href="/assets/js/33.0b7eb877.js"><link rel="prefetch" href="/assets/js/34.f9bb0465.js"><link rel="prefetch" href="/assets/js/35.c00c7ed9.js"><link rel="prefetch" href="/assets/js/36.0e3220b1.js"><link rel="prefetch" href="/assets/js/37.e43ee690.js"><link rel="prefetch" href="/assets/js/38.6d114802.js"><link rel="prefetch" href="/assets/js/39.7e2146cd.js"><link rel="prefetch" href="/assets/js/4.4d4970b0.js"><link rel="prefetch" href="/assets/js/40.659d9c82.js"><link rel="prefetch" href="/assets/js/41.0f250039.js"><link rel="prefetch" href="/assets/js/42.696a0c84.js"><link rel="prefetch" href="/assets/js/43.933ada6f.js"><link rel="prefetch" href="/assets/js/44.559c81f5.js"><link rel="prefetch" href="/assets/js/45.18da099a.js"><link rel="prefetch" href="/assets/js/5.0206a55e.js"><link rel="prefetch" href="/assets/js/6.a94a72f8.js"><link rel="prefetch" href="/assets/js/7.66d9bf35.js"><link rel="prefetch" href="/assets/js/8.7ffe3d83.js"><link rel="prefetch" href="/assets/js/9.a8e4f8ba.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.eded2aa7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="ant-row"><div class="nav-button"><i aria-label="icon: bars" class="anticon anticon-bars"><svg viewBox="0 0 1024 1024" focusable="false" data-icon="bars" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM104 228a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0zm0 284a56 56 0 1 0 112 0 56 56 0 1 0-112 0z"></path></svg></i> <span></span></div> <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-6 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4"><a href="/" class="router-link-active home-link"><img src="/logo.png" alt="🌈李家豪" class="logo"> <span class="site-name">🌈李家豪</span></a> <div class="search-box mobile-search"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div> <div class="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-18 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><ul role="menu" id="nav" class="ant-menu ant-menu-horizontal ant-menu-root ant-menu-light"><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/" class="router-link-active">
+          首页
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item ant-menu-item-selected"><a href="/front-end/" class="router-link-active">
+          🍃前端
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/notes/">
+          📒笔记
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="display:none;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li><li role="menuitem" class="ant-menu-item"><a href="/other/">
+          🌱简历
+        </a></li><li role="menuitem" class="ant-menu-submenu ant-menu-submenu-horizontal ant-menu-overflowed-submenu" style="visibility:hidden;position:absolute;"><div aria-haspopup="true" class="ant-menu-submenu-title"><span>···</span><i class="ant-menu-submenu-arrow"></i></div></li></ul> <!----></nav></div></div> <!----></header> <aside class="sidebar"><!----> <ul class="sidebar-links"><li><a href="/front-end/" aria-current="page" title="前端" class="sidebar-link">前端</a></li><li><a href="/front-end/vuex5要解决哪些问题.html" title="vuex5要解决哪些问题" class="sidebar-link">vuex5要解决哪些问题</a></li><li><a href="/front-end/react入门必知必会知识点.html" title="react 入门必知必会知识点(万字总结)" class="sidebar-link">react 入门必知必会知识点(万字总结)</a></li><li><a href="/front-end/Vue3写一个疫情查询小工具.html" title="Vue3写一个疫情查询小工具" class="sidebar-link">Vue3写一个疫情查询小工具</a></li><li><a href="/front-end/javascript原型与原型链的深度解析.html" title="javascript原型与原型链的深度解析" class="sidebar-link">javascript原型与原型链的深度解析</a></li><li><a href="/front-end/React基础知识.html" title="React基础知识" class="sidebar-link">React基础知识</a></li><li><a href="/front-end/Vue.$nextTick解析.html" title="Vue.$nextTick解析" class="sidebar-link">Vue.$nextTick解析</a></li><li><a href="/front-end/一些语法块.html" title="一些语法块" class="sidebar-link">一些语法块</a></li><li><a href="/front-end/防抖和节流.html" title="防抖和节流" class="sidebar-link">防抖和节流</a></li><li><a href="/front-end/import 和 require 的区别.html" title="import 和 require 的区别" class="sidebar-link">import 和 require 的区别</a></li><li><a href="/front-end/WIndows搭建最完美的VS code开发平台.html" title="WIndows搭建最完美的VS code开发平台" class="sidebar-link">WIndows搭建最完美的VS code开发平台</a></li><li><a href="/front-end/VueX的相关使用.html" title="VueX的相关使用" class="sidebar-link">VueX的相关使用</a></li><li><a href="/front-end/Vue使用axios的get和post请求.html" title="Vue使用axios的get和post请求" class="sidebar-link">Vue使用axios的get和post请求</a></li><li><a href="/front-end/Vue多个组件映射到同一个组件,页面不刷新？.html" title="Vue多个组件映射到同一个组件,页面不刷新？" class="sidebar-link">Vue多个组件映射到同一个组件,页面不刷新？</a></li><li><a href="/front-end/Vue Cli3.0请求本地模拟数据.html" title="Vue Cli3.0请求本地模拟数据" class="sidebar-link">Vue Cli3.0请求本地模拟数据</a></li><li><a href="/front-end/Vue-cli 3.0解决跨域问题.html" title="Vue-cli 3.0解决跨域问题" class="sidebar-link">Vue-cli 3.0解决跨域问题</a></li><li><a href="/front-end/Vue开发环境的搭建.html" title="Vue开发环境的搭建" class="sidebar-link">Vue开发环境的搭建</a></li><li><a href="/front-end/Vue插槽与缓存.html" title="Vue插槽与缓存" class="sidebar-link">Vue插槽与缓存</a></li><li><a href="/front-end/Vue组件.html" title="Vue组件" class="sidebar-link">Vue组件</a></li><li><a href="/front-end/Vue组件库iView的使用.html" title="Vue组件库iView的使用" class="sidebar-link">Vue组件库iView的使用</a></li><li><a href="/front-end/Vue路由的基本加载.html" title="Vue路由的基本加载" class="sidebar-link">Vue路由的基本加载</a></li><li><a href="/front-end/Vue过渡与动画.html" title="Vue过渡与动画" class="sidebar-link">Vue过渡与动画</a></li><li><a href="/front-end/better-scroll插件初始化后没有效果.html" title="better-scroll插件初始化后没有效果" class="sidebar-link">better-scroll插件初始化后没有效果</a></li><li><a href="/front-end/call和apply的区别.html" title="call和apply的区别" class="sidebar-link">call和apply的区别</a></li><li><a href="/front-end/css超出部分显示省略号.html" title="css超出部分显示省略号" class="sidebar-link">css超出部分显示省略号</a></li><li><a href="/front-end/promise的连续调用问题.html" title="promise的连续调用问题" class="sidebar-link">promise的连续调用问题</a></li><li><a href="/front-end/vue-amap的bug -Cannot read property 'Ac' of null.html" title="vue-amap的bug -Cannot read property 'Ac' of null" class="sidebar-link">vue-amap的bug -Cannot read property 'Ac' of null</a></li><li><a href="/front-end/子组件和父组件通信.html" title="子组件和父组件通信" class="sidebar-link">子组件和父组件通信</a></li><li><a href="/front-end/解决移动端300ms延迟点击的问题.html" title="解决移动端300ms延迟点击的问题" class="sidebar-link">解决移动端300ms延迟点击的问题</a></li><li><a href="/front-end/记一次自己封装NPM包的经历.html" title="记一次自己封装NPM包的经历" class="sidebar-link">记一次自己封装NPM包的经历</a></li><li><a href="/front-end/Es6的学习笔记1.html" title="Es6的学习笔记1" class="sidebar-link">Es6的学习笔记1</a></li><li><a href="/front-end/Es6的学习笔记2.html" title="Es6的学习笔记2" class="sidebar-link">Es6的学习笔记2</a></li><li><a href="/front-end/git学习.html" title="git学习" class="active sidebar-link">git学习</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/front-end/git学习.html#git是什么" title="Git是什么？" class="sidebar-link">Git是什么？</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#什么是版本控制" title="什么是版本控制？" class="sidebar-link">什么是版本控制？</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#安装" title="安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#配置" title="配置" class="sidebar-link">配置</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#git-常用命令" title="Git 常用命令" class="sidebar-link">Git 常用命令</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#git流程步骤" title="git流程步骤" class="sidebar-link">git流程步骤</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#git-代码提交规范" title="git 代码提交规范" class="sidebar-link">git 代码提交规范</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#commit-message" title="commit message" class="sidebar-link">commit message</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#继续优化" title="继续优化" class="sidebar-link">继续优化</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#eslint" title="eslint" class="sidebar-link">eslint</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#prettier" title="prettier" class="sidebar-link">prettier</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#commitlint-和-commitlint-config-cz" title="commitlint 和 commitlint-config-cz" class="sidebar-link">commitlint 和 commitlint-config-cz</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#总结" title="总结" class="sidebar-link">总结</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#gitflow流程" title="Gitflow流程" class="sidebar-link">Gitflow流程</a></li><li class="sidebar-sub-header"><a href="/front-end/git学习.html#删除github项目中指定的目录和文件" title="删除github项目中指定的目录和文件" class="sidebar-link">删除github项目中指定的目录和文件</a></li></ul></li></ul></aside> <main class="page"> <div class="theme-antdocs-content content__default"><h2 id="git是什么"><a href="#git是什么" class="header-anchor">#</a> Git是什么？</h2> <p>Git 是一个开源的分布式版本控制系统.</p> <h2 id="什么是版本控制"><a href="#什么是版本控制" class="header-anchor">#</a> 什么是版本控制？</h2> <p>版本控制是一种记录一个或若干文件内容变化,以便将来查阅特定版本修订情况的系统.</p> <h3 id="集中化的版本控制系统和分布式版本控制系统"><a href="#集中化的版本控制系统和分布式版本控制系统" class="header-anchor">#</a> 集中化的版本控制系统和分布式版本控制系统</h3> <p>集中化的版本控制系统,都有一个单一的集中管理的服务器,保存所有文件的修订版本,而协同工作的人们都通过客户端连到这台服务器,取出最新的文件或者提交更新.也就是说,  是多对一,如下图：</p> <p><img src="https://i.loli.net/2019/03/14/5c8a2964c00a2.png" alt="未命名文件.png"></p> <p>这样做最显而易见的缺点就是服务器很容易发生单点故障而导致的全线奔溃.比如某一天服务器突然宕机,那么在宕机的这段时间内,所有的协同工作者均无法提交更新,无法实现协同工作,一旦服务器的磁盘受损,恰巧没有对文件进行备份,那就会发生数据丢失的惨剧.这个项目就相当于完全归零（<s>删库跑路</s>）🙃️
+分布式版本控制系统的客户端并不只提取最新版本的文件快照,而是把代码仓库完整地镜像备份下来.这么一来,任何一处协同工作用的服务器发生故障,事后都可以用任何一个镜像出来的本地仓库恢复.因为每一次的提取操作,实际上都是一次对代码仓库的完整备份,如下图：</p> <p><img src="https://i.loli.net/2019/03/14/5c8a2b75051e1.png" alt="未命名文件 (1).png"></p> <h3 id="为什么使用git"><a href="#为什么使用git" class="header-anchor">#</a> 为什么使用Git？</h3> <p>Git 是分布式的.这是 Git 和其它非分布式的版本控制系统,例如 svn,cvs 等,最核心的区别.分布式带来以下好处：</p> <ol><li>更加安全,每个人的电脑上都是一个完整的版本库,独立负责自己的工作部分却又整体在推进项目的进行.只需把各自的修改推送给对方,就可以互相看到对方的修改了.</li> <li>集中式版本控制系统,一旦中央服务器出了问题,所有人都无法工作.</li> <li>分布式版本控制系统,每个人电脑中都有完整的版本库,所以某人的机器挂了,并不影响其它人.</li></ol> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <h3 id="windows-环境安装"><a href="#windows-环境安装" class="header-anchor">#</a> Windows 环境安装</h3> <p>在Git 官方下载地址下载 exe 安装包.按照安装向导安装即可.</p> <p>建议安装 Git Bash 这个 git 的命令行工具.</p> <h3 id="mac-环境安装"><a href="#mac-环境安装" class="header-anchor">#</a> Mac 环境安装</h3> <p>在Git 官方下载地址下载 mac 安装包.按照安装向导安装即可.</p> <h2 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h2> <p>Git 自带一个 git config 的工具来帮助设置控制 Git 外观和行为的配置变量.</p> <h3 id="用户信息"><a href="#用户信息" class="header-anchor">#</a> 用户信息</h3> <p>当安装完 Git 应该做的第一件事就是设置你的用户名称与邮件地址. 这样做很重要,因为每一个 Git 的提交都会使用这些信息,并且它会写入到你的每一次提交中,不可更改：</p> <div class="language- extra-class"><pre class="language-text"><code>$ git config --global user.name &quot;xieyezi&quot;
+$ git config --global user.email xieyezi@example.com
+</code></pre></div><p>在你每一次提交你代码更新信息时,会携带你的用户信息</p> <h3 id="gitignore"><a href="#gitignore" class="header-anchor">#</a> .gitignore</h3> <p>这个文件里配置的文件或目录,会自动被 git 所忽略,不纳入版本控制.项目在进行开发时,经常会产生一些临时文件或者依赖文件,例如<code>npm node_modules</code>等,这些没有必要放入git服务器进行托管,就会被<code>.gitignore</code>纳入.</p> <h3 id="git基本原理简介"><a href="#git基本原理简介" class="header-anchor">#</a> git基本原理简介</h3> <h4 id="版本库"><a href="#版本库" class="header-anchor">#</a> 版本库</h4> <p>当你一个项目到本地或创建一个 git 项目,项目目录下会有一个隐藏的 .git 子目录.这个目录是 git 用来跟踪管理版本库的,千万不要手动修改.</p> <h4 id="文件状态"><a href="#文件状态" class="header-anchor">#</a> 文件状态</h4> <p>在 git 中,你的文件可能会处于三种状态之一：</p> <ul><li>已修改（modified） - 已修改表示修改了文件,但还没保存到数据库中.</li> <li>已暂存（staged） - 已暂存表示对一个已修改文件的当前版本做了标记,使之包含在下次提交的快照中.</li> <li>已提交（committed） - 已提交表示数据已经安全的保存在本地数据库中.</li></ul> <h4 id="工作区域"><a href="#工作区域" class="header-anchor">#</a> 工作区域</h4> <p>与文件状态对应的,不同状态的文件在 Git 中处于不同的工作区域.</p> <ul><li>工作区（working） - 当你 git clone 一个项目到本地,相当于在本地克隆了项目的一个副本.工作区是对项目的某个版本独立提取出来的内容. 这些从 Git 仓库的压缩数据库中提取出来的文件,放在磁盘上供你使用或修改.</li> <li>暂存区（staging） - 暂存区是一个文件,保存了下次将提交的文件列表信息,一般在 Git 仓库目录中. 有时候也被称作‘索引’,不过一般说法还是叫暂存区.</li> <li>本地仓库（local） - 提交更新,找到暂存区域的文件,将快照永久性存储到 Git 本地仓库.</li> <li>远程仓库（remote） - 以上几个工作区都是在本地.为了让别人可以看到你的修改,你需要将你的更新推送到远程仓库.同理,如果你想同步别人的修改,你需要从远程仓库拉取更新.</li></ul> <h2 id="git-常用命令"><a href="#git-常用命令" class="header-anchor">#</a> Git 常用命令</h2> <ol><li>配置自己的用户名和邮箱：
+git config --global user.name &quot;username&quot;
+git config --global user.email &quot;username@xiaoheiban.com&quot;</li></ol> <p>// 如果某个项目你需要单独配置 user.name, 可以进入到相应的目录
+git config --local user.name &quot;username&quot;
+git config --local user.email &quot;username@xiaoheiban.com&quot;</p> <ol start="2"><li><p>删除某项配置
+git config --unset alias.co</p></li> <li><p>分支查看：
+查看本地分支：（gb）git br
+查看全部分支: （gba）git br -av</p></li> <li><p>创建分支两种方式，如从 master 上创建 develop 分支
+// 创建新的分支，但是不会立即切到新的分支上面
+gb develop master
+// 创建新的分支，并且立即切到新的分支上面
+gcp develop master</p></li> <li><p>切换分支
+// master
+gcm
+// develop
+gcd
+// feature/xx
+gco feature/xx</p></li> <li><p>合并分支
+将 develop 合并到 master：
+// merge
+// rebase
+grbm (git rebase master 基于 master 做 rebase)
+// 解决完冲突后 ga . ,不要做 commit
+grbc (git rebase --continue)
+// 如果不需要当前的 log
+grbs （git rebase --skip）
+// 如果需要终止当前 rebase
+grba （git rebase --abort）</p></li></ol> <p>7.标记</p> <p>a. 打标记：git tag v0.1.0
+b. 查看标记：git tag -l
+c. 删除标记：git tag -d v0.1.0
+d. 删除远程 tag：git push origin :refs/tags/v0.9.3
+e. 推送 tag：git push --tags</p> <ol start="8"><li><p>误删除的文件一次性恢复，两种方式，首先切到 bash 命令模式下或 linux 下直接用：
+git ls-fies -d | xargs git co --
+git ls-files -d | xargs -i git co {}</p></li> <li><p>删除分支</p></li></ol> <p>删除本地分支：gbd feature_test
+删除远程分支：gp origin :feature_test
+清除远程在本地存在，而远程已经删除的分支：git remote prune origin</p> <ol start="10"><li>恢复文件</li></ol> <p>gco -- file
+命令中的“--”很重要，没有“--”，就变成了“创建一个新分支”的命令</p> <ol start="11"><li>查看提交 log</li></ol> <p>glg|glog filename
+可以看到 fileName 相关的 commit 记录</p> <p>glgp
+可以显示每次提交的 diff</p> <p>只看某次提交中的某个文件变化，可以直接加上 fileName</p> <p>git show c5e69804bbd9725b5dece57f8cbece4a96b9f80b filename</p> <ol start="12"><li><p>git stash 命令
+git stash
+git stash pop
+git stash list
+git stash clear
+git stash apply
+git stash apply stash@{1}</p></li> <li><p>提交远程分支</p></li></ol> <p>首次提交分支，需要加-u 与远程分支关联： git push -u origin develop /(gsup)
+关联过只用：git push /(gp)</p> <p>14.拉分支</p> <p>更新当前分支：git pull
+在 master 上分支上更新 devlop 分支：git pull origin develop:develop
+删除远程已被删除的分支： git remote prune origin</p> <ol start="15"><li><p>查看远程地址
+git remote -v
+git remote show origin
+// 修改远程关联分支
+git remote set-url origin newurl</p></li> <li><p>清除修改</p></li></ol> <p>清除本地未提交的修改：（grhh）git reset --hard
+清除本地已提交但是未推送的修改：git reset --hard origin/master</p> <p><a href="https://sourabhbajaj.com/mac-setup/" target="_blank" rel="noopener noreferrer">大神的基本配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="git流程步骤"><a href="#git流程步骤" class="header-anchor">#</a> git流程步骤</h2> <h1 id="git-流程"><a href="#git-流程" class="header-anchor">#</a> Git 流程</h1> <p>一、要开发一个新的功能的时候，从 master 切一个分支出来</p> <ol><li><p>拉取最新代码
+git pull --rebase (gup)</p></li> <li><p>起一个新的分支
+功能分支:
+git checkout -b feature/xxxx
+修复分支:
+git checkout -b hotfix/xxxx
+开发完毕提 mr，如果 mr 没有冲突，则到此为止，直接通知相应人员就好了，如果产生了冲突，请按照下面步骤操作</p></li></ol> <p>二、功能开发完毕，需要合并到 master。这时候要先 rebase 下最新的 master 分支，再合并</p> <ol><li>切换 master 分支
+git checkout master (gcm)</li> <li>拉取最新代码
+git pull --rebase (gup)</li> <li>切换到自己的分支
+git checkout feature/xxx (gco feature/xxx)
+以上步骤完成之后，请按照下面步骤操作</li> <li>基于 master 做 rebase
+git rebase master (grbm)</li> <li>这个时候会产生冲突，产生冲突时，手动解决冲突
+git add .</li> <li>进入下一个冲突
+git rebase --continue (grbc)</li> <li>如果都解决完了
+git push --force-with-lease (gpf)</li> <li>大功告成，让 mr 负责人直接合并代码吧
+rebase 的一些其他命令
+如果不需要当前的 log
+grbs （git rebase --skip）
+如果需要终止当前 rebase
+grba （git rebase --abort）</li></ol> <h2 id="git-代码提交规范"><a href="#git-代码提交规范" class="header-anchor">#</a> git 代码提交规范</h2> <p>平时自己写代码的时候，每当需要提交代码到 GitHub 的时候，我一般的操作是直接<code>git commit 'xxxx'</code>，然后直接就推送了，后来项目变得稍微有点大了，还有一些其他小伙伴加入了项目的开发，他们给我项目仓库提交代码，长时间之后去看他们的提交，甚至都不知道他们干了啥，这就很尴尬了。所以 git 的提交必须要规范才行，尤其是在多人协作的项目中，如果 Git 的提交说明精准，在后期协作以及后期 review 会变得有据可查，项目的开发可以根据规范的提交说明快速生成开发日志，从而方便开发者或用户追踪项目的开发信息和功能特性。 </p> <h2 id="commit-message"><a href="#commit-message" class="header-anchor">#</a> commit message</h2> <p>我们每一次提交必定是有特殊的行为，或是开发新功能、或是修复 bug 等等。我们针对不同的操作有如下的分类：</p> <ul><li>type: commit 的类型</li> <li>feat: 开发新的功能</li> <li>fix: 修复 bug</li> <li>refactor: 代码重构</li> <li>docs: 文档修改</li> <li>style: 代码格式修改, 注意不是 css 修改</li> <li>test: 测试用例修改</li> <li>perf: 改善性能</li> <li>build: 变更项目构建或外部依赖（例如 scopes: webpack、gulp、npm 等）</li> <li>chore: 其他修改, 比如构建流程, 依赖管理.</li> <li>revert: 代码回退</li></ul> <p>而 commit 的格式也有标准格式:</p> <ul><li>scope: commit 影响的范围, 比如: route, component, utils, build...</li> <li>subject: commit 的概述</li> <li>body: commit 具体修改内容</li> <li>footer: 一些备注, 通常是 BREAKING CHANGE 或修复的 bug 的链接.</li></ul> <h2 id="继续优化"><a href="#继续优化" class="header-anchor">#</a> 继续优化</h2> <p>假设现在有两个程序猿，程序猿甲某一天开发了一个新的功能，然后愉快利用如上的步骤提交了，过了几天，程序猿乙在他的基础上修改了代码，然后又进行了提交，又过了几天，程序猿乙因为跟产品经理吵了一架，愤然离去。接着这个功能模块只能由程序猿甲来进行迭代维护。于是在一个美丽的周一早晨，程序猿甲打开 vscode，拉取了项目代码，本想愉快的进行开发，但是他发现他原来的代码，被改得面目全非:“我这里原来没有分号啊...”、“这里原来都是双引号啊...”。他陷入了对人生的思考。通过上面的简短故事，我们了解到在进行团队协作开发的时候，由于每个人的代码都不相同，一千个哈姆雷特就出来了，代码变得越来越难以维护。所以我们需要一些“规则”来约束团队成员，达到一致的风格。
+下面就是一套“降龙十八掌”:</p> <h2 id="eslint"><a href="#eslint" class="header-anchor">#</a> eslint</h2> <p>第一式: <code>eslint</code> : <code>npm install -D eslint</code><br> <code>eslint</code> : 提供编码规范，提供自动检验代码的程序，并打印检验结果：告诉你哪一个文件哪一行代码不符合哪一条编码规范，方便你去修改代码，可以通过配置文件来加以配置。比如:</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token comment">//.eslintrc.js</span>
+   <span class="token punctuation">{</span>
+   <span class="token string">&quot;extends&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;airbnb&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;plugin:prettier/recommended&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// eslint扩展规则</span>
+   <span class="token string">&quot;parserOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+       <span class="token string">&quot;ecmaVersion&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;sourceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;ecmaFeatures&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+       <span class="token string">&quot;jsx&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token string">&quot;parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;babel-eslint&quot;</span><span class="token punctuation">,</span><span class="token comment">// 解决ES6 improt会报错</span>
+   <span class="token string">&quot;env&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// eg如果不配置browser，window就会被eslint报undefined的错</span>
+       <span class="token string">&quot;es6&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;browser&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;node&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token string">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;react&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;jsx-a11y&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;import&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+   <span class="token string">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+       <span class="token string">&quot;class-methods-use-this&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;import/no-named-as-default&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;react/jsx-filename-extension&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+       <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span>
+       <span class="token punctuation">{</span>
+           <span class="token string">&quot;extensions&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.jsx&quot;</span><span class="token punctuation">]</span>
+       <span class="token punctuation">}</span>
+       <span class="token punctuation">]</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>在 eslint 里面，你可以约束文件的行数、单行代码的长度，甚至是函数的复杂度等等。</p> <h2 id="prettier"><a href="#prettier" class="header-anchor">#</a> prettier</h2> <p>第二式:<code>prettier</code> : <code>npm install -D prettier</code><br> <code>prettier</code> : 代码格式化。
+利用<code>prettier</code>可以进行统一的代码格式化。从此再也没有要不要分号的纷争了。例如:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//.prettierrc</span>
+    <span class="token punctuation">{</span>
+    <span class="token string">&quot;printWidth&quot;</span><span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span> <span class="token comment">// 一行最大多少字符</span>
+    <span class="token string">&quot;tabWidth&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// tab占用的字符数</span>
+    <span class="token string">&quot;useTabs&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 是否使用tab代替空格</span>
+    <span class="token string">&quot;semi&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否每句后都加分号</span>
+    <span class="token string">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否使用单引号</span>
+    <span class="token string">&quot;jsxSingleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// jsx是否使用单引号</span>
+    <span class="token string">&quot;trailingComma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 数组尾逗号。</span>
+    <span class="token string">&quot;bracketSpacing&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// {foo: xx}还是{ foo: xx }</span>
+    <span class="token string">&quot;arrowParens&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span> <span class="token comment">//箭头头函数参数是否使用（）</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>那有了如上两个掌法，我们已经可以很好的实现代码格式统一，但是又衍生了一个新的问题:<br>
+开发的时候，什么时候进行代码的规则校验和格式化统一呢？相信很多小伙伴想到了解决方法:在进行<code>commit</code>的时候进行校验和格式化。</p> <p>此时就用到了第三式:<code>husky</code><br> <code>husky</code> : <a href="https://github.com/typicode/husky" target="_blank" rel="noopener noreferrer">husky<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>是一个 npm 包，安装后，可以很方便的在 package.json 配置 git hook 脚本。
+我们在这里要用到一个主要的钩子:<code>pre-commit</code>,这个钩子会在你<code>commit</code>的时候执行你想要的操作。例如:</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;hooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token property">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run lint&quot;</span>
+   <span class="token punctuation">}</span>
+</code></pre></div><p>以上代码，当你在后续的每一次<code>git commit</code> 之前，都会执行一次对应的 hook 脚本 npm run lint 。
+所以这个时候，我们把<code>eslint</code>和<code>prettier</code>的操作都放在<code>pre-commit</code>钩子里面就可以了:</p> <div class="language-json extra-class"><pre class="language-json"><code>  <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;hooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token property">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;*.{json,css,md}&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+     <span class="token string">&quot;npm run format&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;git add&quot;</span>
+   <span class="token punctuation">]</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;*.scss&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+     <span class="token string">&quot;npm run lint:scss&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;npm run format&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;git add&quot;</span>
+   <span class="token punctuation">]</span><span class="token punctuation">,</span>
+   <span class="token property">&quot;*.{js,vue,ts,tsx}&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+     <span class="token string">&quot;npm run lint&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;npm run format&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;git add&quot;</span>
+   <span class="token punctuation">]</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><p>如上，在每一次提交之前，我们都进行了 <code>eslint</code> 的代码规则校验和 <code>prettier</code> 的代码格式化。
+但是现在有一个问题还没解决，待我细细道来。现在我们再到我们项目的根目录下，我们再次利用<code>git add .</code> 和 <code>git commit -m xxx</code> 来提交，结果发现提交仍然通过了，那我们现在既可以用<code>npm run commit</code>来提交，也可以用原来的命令来提交，那我们原来搞的这一套不就是白费了吗？我的意思是我们应该对<code>commit</code>进行校验，如果校验不能通过，那我们就不允许他<code>commit</code>。那我们继续往下操作吧。</p> <h2 id="commitlint-和-commitlint-config-cz"><a href="#commitlint-和-commitlint-config-cz" class="header-anchor">#</a> commitlint 和 commitlint-config-cz</h2> <p>安装<code>commitlint</code>和<code>commitlint-config-cz</code>:</p> <div class="language-js extra-class"><pre class="language-js"><code>  npm install <span class="token operator">-</span><span class="token constant">D</span> @commitlint<span class="token operator">/</span>cli
+  npm install <span class="token operator">-</span><span class="token constant">D</span> commitlint<span class="token operator">-</span>config<span class="token operator">-</span>cz
+</code></pre></div><p>在项目的根目录下新建 <code>commitlint.config.js</code>:</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;cz&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  rules<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;type-empty&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//不允许提交的类型为空</span>
+    <span class="token string">&quot;subject-empty&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//不允许提交的内容为空</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+   <span class="token property">&quot;hooks&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token property">&quot;commit-msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commitlint -E HUSKY_GIT_PARAMS&quot;</span><span class="token punctuation">,</span> <span class="token comment">// 在husky的配置里面加入这一句，意思为了在提交前进行校验</span>
+     <span class="token property">&quot;pre-commit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lint-staged&quot;</span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><p>然后你再去用原来的<code>git comiit -m xxx</code>就会发现提交不通过了，我们达到了校验的目的。至此我们就完成前端提交代码的规范啦～</p> <h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>我们先来看看提交的流程图:</p> <p><img src="https://user-gold-cdn.xitu.io/2019/12/8/16ee4a036735c758?w=1086&amp;h=594&amp;f=png&amp;s=25699" alt="未命名文件.png"></p> <p>通过<code>commitizen</code>、<code>cz-customizable</code>、<code>eslint</code>、<code>prettier</code>、<code>husky</code>、<code>commitlint</code>我们完整的约束了提交的流程，保证了代码的统一，提高了代码的健壮性和可维护性。为后期的工作节省了很多时间，又可以省出很多时间去勾搭小姐姐了 😏</p> <h2 id="gitflow流程"><a href="#gitflow流程" class="header-anchor">#</a> Gitflow流程</h2> <p>Gitflow是一个基于feature分支管理的版本发布方案。它是由荷兰程序猿Vincent Driessen设计研发，开源项目地址gitflow-avh。
+大致流程是：</p> <ul><li>不同feature在不同feature分支上单独开发(或测试)。</li> <li>确定版本号和此版本将要发布的功能后，将相应featustre分支统一向develop分支合并，然后拉出新的release预发布分支。</li> <li>release分支作为持续集成关注的分支，修复bug。</li> <li>待release分支测试验收通过后，统一向master分支和develop分支合并，并在master分支打tag。</li> <li>根据tag发布apk版本。</li></ul> <p>若线上发现严重bug，需走hotfix流程。</p> <ul><li>基于master分支拉出hotfix分支修复线上问题。</li> <li>bug修复完成统一向master和develop分支合并。</li> <li>master分支打上新的tag，发布新版本。</li></ul> <p>下面将介绍如何使用Gitflow命令完成上述版本发布，一条Gitflow指令可能对应了一系列git命令，为的是规范化开发流程，提高代码管理效率。</p> <h3 id="mac平台安装"><a href="#mac平台安装" class="header-anchor">#</a> Mac平台安装</h3> <div class="language- extra-class"><pre class="language-text"><code>brew install git-flow
+</code></pre></div><p>brew表示Homebrew，它是mac平台常用的包管理器，没有安装则需先安装，安装可参考Mac OS下brew的安装和使用。</p> <h3 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h3> <p>先将远程仓库克隆到本地。</p> <div class="language- extra-class"><pre class="language-text"><code>git clone &lt;project_url&gt;
+</code></pre></div><p>各种初始化Gitflow配置。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow init
+</code></pre></div><p>命令行会提示你是否修改Gitflow提供的默认分支前缀。不同场景的分支前缀不同，默认情况下分支前缀是这样的：</p> <table><thead><tr><th>场景</th> <th>分支前缀</th></tr></thead> <tbody><tr><td>新功能</td> <td>feature</td></tr> <tr><td>预发布</td> <td>release</td></tr> <tr><td>热修复</td> <td>hotfix</td></tr> <tr><td>打tag</td> <td>空</td></tr></tbody></table> <p>分支前缀的作用是区分不同分支的使用场景，同时当你使用Gitflow命令时就不需手动添加分支前缀了，Gitflow会帮你加上。
+比如开发新功能需创建一个feature分支，名为gitworkflow，使用下面的代码将会创建一个名为feature/gitworkflow本地分支。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow feature start gitworkflow
+</code></pre></div><p>通常情况下不需要修改默认的命名前缀，只需加上-d就可跳过修改命名阶段。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow init -d
+</code></pre></div><h3 id="行为-action"><a href="#行为-action" class="header-anchor">#</a> 行为/Action</h3> <p>通常来说，一种场景的完整生命周期应至少包含以下几种行为：</p> <ul><li>start 开始开发</li> <li>publish 发布到远程分支</li> <li>finish 完成开发、合并到主分支</li></ul> <p>我们首先以feature场景为例，看看如何完成工作流。</p> <h3 id="feature流程"><a href="#feature流程" class="header-anchor">#</a> feature流程</h3> <h4 id="start"><a href="#start" class="header-anchor">#</a> start</h4> <p>新功能开始开发前，需准备好开发分支。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow feature start &lt;feature_name&gt;
+</code></pre></div><p>执行上面的命令将会在本地创建名为&lt;feature_name&gt;的分支，并切换到该分支，而且不论当前所处哪个分支都是基于develop分支创建，相当于执行了下面的git的命令。</p> <div class="language- extra-class"><pre class="language-text"><code>git checkout -b feature/&lt;feature_name&gt; develop
+</code></pre></div><p>需要注意基于的是本地的develop分支，执行此命令前一般需要拉取最新的远程代码。</p> <h4 id="publish"><a href="#publish" class="header-anchor">#</a> publish</h4> <p>在本地开发完成新功能并commit后，需要将本地代码push到远程仓库。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow feature publish &lt;feature_name&gt;
+</code></pre></div><p>这行指令做了三件事。</p> <ul><li>创建一个名为feature/&lt;feature_name&gt;的远程分支。</li> <li>本地分支track上述远程分支。</li> <li>如果本地有未push代码，则执行push。</li></ul> <p>转换成git命令就是下面的样子：</p> <div class="language- extra-class"><pre class="language-text"><code>git push origin feature/&lt;feature_name&gt;
+git push --set-upstream origin feature/&lt;feature_name&gt;
+git push origin
+</code></pre></div><p>注意：如果已经执行过publish后又有新的代码需push，再次执行将报错，因为它始终会试图创建一个远程分支。此时需执行正常的push命令git push origin。</p> <h4 id="finish"><a href="#finish" class="header-anchor">#</a> finish</h4> <p>当功能开发完毕后就将进入测试阶段，此时需将一个或多个feature分支统一合并到develop分支。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow feature finish &lt;feature_name&gt;
+</code></pre></div><p>这行指令也做了三件事。</p> <ul><li>切换到develop分支。</li> <li>合并代码到develop分支</li> <li>删除本地feature/&lt;feature_name&gt;分支。
+等价于执行下面的git命令：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>git checkout develop
+git merge feature/&lt;feature_name&gt;
+git branch -d feature/&lt;feature_name&gt;
+</code></pre></div><p>如果merge时发生了冲突，则在第二步merge时终止流程，即不会再删除本地分支。但当前已处于develop分支，待本地冲突解决并commit后，重新执行<code>git flow feature finish &lt;feature_name&gt;</code>即可完成finish流程。
+细心的同学可以已经发现finish还有两件事没做。</p> <ul><li>develop分支代码还未push。</li> <li>未删除远程分支feature/&lt;feature_name&gt;。</li></ul> <p>也就是还需执行</p> <div class="language- extra-class"><pre class="language-text"><code>git push origin develop
+git push origin :feature/&lt;feature_name&gt;
+</code></pre></div><h3 id="release流程"><a href="#release流程" class="header-anchor">#</a> release流程</h3> <p>当新功能开发完毕，将进入测试阶段，此时需要基于develop分支拉出release分支进行集成测试，也有将release场景作为预发布环境进行测试的，即feature场景已完成常规测试，在这种情况下，一般而言release只有少数改动。在这里我们先不讨论项目流程问题。
+使用start指令开启一个release场景，通常以版本号命令，我们以v2.0为例：</p> <div class="language- extra-class"><pre class="language-text"><code>git flow release start v2.0
+</code></pre></div><p>此命令会基于本地的develop分支创建一个release/v2.0分支，并切换到这个分支上。
+为了让其他协同人员也能看到此分支，需要将其发布出去。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow release publish v2.0
+</code></pre></div><p>以上和feature场景十分类似。
+待测试通过需要发布正式版：</p> <div class="language- extra-class"><pre class="language-text"><code>git flow release finish v2.0
+</code></pre></div><p>这一步做的动作有点多，大致是：</p> <ul><li>git fetch</li> <li>release/v2.0分支代码向master合并。</li> <li>生成名为v2.0的tag。</li> <li>release/v2.0分支代码向develop合并。</li> <li>删除本地release/v2.0分支。</li> <li>切换回develop分支。</li></ul> <p>如果merge产生冲突不会终止流程，只是不会将本地的release分支删除，待解决完冲突后需再次执行finish指令。
+另外需要注意的是，如果本地还有未finish的release分支，将不允许使用start指令开启新的release分支，这一点是对并行发布的一个限制。
+release finish只是完成了本地代码的一系列操作，还需要同步到远程仓库。</p> <div class="language- extra-class"><pre class="language-text"><code>git push origin develop
+git push origin master
+git push origin v2.0
+</code></pre></div><p>或者使用下面的命令推送所有的分支和tag。</p> <div class="language- extra-class"><pre class="language-text"><code>git push origin --all
+git push origin --tags
+</code></pre></div><h3 id="hotfix-流程"><a href="#hotfix-流程" class="header-anchor">#</a> hotfix 流程</h3> <p>当tag打完，也表示正式版本发布出去了，如果此时在线上发现了严重的bug，需要进行紧急修复。
+此时我们假设版本号变为v2.0-patch。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow hotfix start v2.0-patch
+</code></pre></div><p>这将创建一个hotfix/v2.0本地分支并切换到该分支。 hotfix没有publish指令，认为hotfix应该是个小范围改动，不需要其他协同人员参与。
+待本地修改结束commit后，执行finish指令。</p> <div class="language- extra-class"><pre class="language-text"><code>git flow hotfix finish v2.0-patch
+</code></pre></div><p>按照Gitflow工作流，它会执行下面的任务，与release基本一致。</p> <ul><li>git fetch</li> <li>hotfix/v2.0-patch分支代码向master合并。</li> <li>生成名为v2.0-patch的tag。</li> <li>hotfix/v2.0-patch分支代码向develop合并。</li> <li>删除本地hotfix/v2.0-patch分支。</li> <li>切换回develop分支。</li></ul> <h2 id="删除github项目中指定的目录和文件"><a href="#删除github项目中指定的目录和文件" class="header-anchor">#</a> 删除github项目中指定的目录和文件</h2> <h3 id="说在前面"><a href="#说在前面" class="header-anchor">#</a> 说在前面</h3> <p>有时候我们将项目托管至github之后才发现,我们可能需要删除部分指定的目录或者文件,但是直接在<code>.gitignore</code>文件标注说明,推送到github之后,你会发现想要删除的目录仍然没有删除,所以此时我们需要使用git命令来进行删除.</p> <h3 id="删除指定目录或文件"><a href="#删除指定目录或文件" class="header-anchor">#</a> 删除指定目录或文件</h3> <ol><li>先删除本地的git缓存</li></ol> <div class="language- extra-class"><pre class="language-text"><code>git rm -r --cached &lt;filename&gt;
+</code></pre></div><ol start="2"><li><p>在.gitignore中加入需要忽略的文件夹或文件</p></li> <li><p>重新提交</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>git add -A
+git commit -m &quot;remove files&quot;
+</code></pre></div><ol start="4"><li>推送到GitHub</li></ol> <div class="language- extra-class"><pre class="language-text"><code>git push origin master
+</code></pre></div><p>到Github查看,大功告成！</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/qiyulaoshi/qiyulaoshi.github.io/edit/master/front-end/git学习.md" target="_blank" rel="noopener noreferrer">帮助我改善这个页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">3/17/2021, 1:38:31 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/front-end/Es6的学习笔记2.html" class="prev"><i aria-label="icon: left" class="anticon anticon-left"><svg viewBox="64 64 896 896" focusable="false" data-icon="left" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"></path></svg></i>
+        Es6的学习笔记2
+      </a></span> <!----></p></div> </main> <!----></div><div class="global-ui"><canvas id="vuepress-canvas-cursor"></canvas><!----><div id="goTop" class="hide-cat" data-v-a11242f6></div></div></div>
+    <script src="/assets/js/app.40613aa4.js" defer></script><script src="/assets/js/2.4ede8d6e.js" defer></script><script src="/assets/js/28.c3c7b157.js" defer></script>
+  </body>
+</html>
